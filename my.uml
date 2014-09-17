@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_SPKUwDz8EeSXStFmSYbJ-Q" name="NewModel">
   <packagedElement xmi:type="uml:Class" xmi:id="_lrYc4Dz8EeSXStFmSYbJ-Q" name="Computer"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_vpaMQDz8EeSXStFmSYbJ-Q" name="Memory">
-    <ownedOperation xmi:id="_z173EDz8EeSXStFmSYbJ-Q" name="getValue">
-      <ownedParameter xmi:id="_46umoDz8EeSXStFmSYbJ-Q" name="adress"/>
-    </ownedOperation>
-  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_AKEiMDz9EeSXStFmSYbJ-Q" name="Operation">
     <ownedOperation xmi:id="_ElF8ADz9EeSXStFmSYbJ-Q" name="exec"/>
   </packagedElement>
@@ -36,8 +31,8 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_yYjBIDz-EeSXStFmSYbJ-Q" name="LongWord">
     <generalization xmi:id="_0Ik0UDz-EeSXStFmSYbJ-Q" general="_uBzDUDz-EeSXStFmSYbJ-Q"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_3ndWADz-EeSXStFmSYbJ-Q" name="Memory" isAbstract="true"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_8A9F0Dz-EeSXStFmSYbJ-Q" name="LongMemory">
+    <generalization xmi:id="_jFCoED5BEeSFd5zkEuXLfw" general="_czSWID5BEeSFd5zkEuXLfw"/>
     <ownedAttribute xmi:id="_-TNcUDz-EeSXStFmSYbJ-Q" name="memory" type="_yYjBIDz-EeSXStFmSYbJ-Q">
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_HiM7cDz_EeSXStFmSYbJ-Q">
         <value xsi:nil="true"/>
@@ -68,4 +63,35 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_GFZw0D0AEeSXStFmSYbJ-Q" clientDependency="_IcAb0D0AEeSXStFmSYbJ-Q" name="Print">
     <interfaceRealization xmi:id="_IcAb0D0AEeSXStFmSYbJ-Q" client="_GFZw0D0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dp4cYD5AEeSFd5zkEuXLfw" name="computersToMemorys" memberEnd="_dp5DcD5AEeSFd5zkEuXLfw _dp64oD5AEeSFd5zkEuXLfw" navigableOwnedEnd="_dp5DcD5AEeSFd5zkEuXLfw _dp64oD5AEeSFd5zkEuXLfw">
+    <ownedEnd xmi:id="_dp5DcD5AEeSFd5zkEuXLfw" name="computers" type="_lrYc4Dz8EeSXStFmSYbJ-Q" association="_dp4cYD5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dp6RkD5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dp6RkT5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dp64oD5AEeSFd5zkEuXLfw" name="memorys" type="_czSWID5BEeSFd5zkEuXLfw" association="_dp4cYD5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dp8GwD5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dp8GwT5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ee_fcD5AEeSFd5zkEuXLfw" name="computersToPrograms" memberEnd="_efAGgD5AEeSFd5zkEuXLfw _efEX8D5AEeSFd5zkEuXLfw" navigableOwnedEnd="_efAGgD5AEeSFd5zkEuXLfw _efEX8D5AEeSFd5zkEuXLfw">
+    <ownedEnd xmi:id="_efAGgD5AEeSFd5zkEuXLfw" name="computers" type="_lrYc4Dz8EeSXStFmSYbJ-Q" association="_ee_fcD5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efDJ0D5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efDw4D5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_efEX8D5AEeSFd5zkEuXLfw" name="programs" type="_Rmm_oDz_EeSXStFmSYbJ-Q" association="_ee_fcD5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efHbQD5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efICUD5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wgof8D5AEeSFd5zkEuXLfw" name="wordsToLongMemorys" memberEnd="_wgpHAD5AEeSFd5zkEuXLfw _wgq8MT5AEeSFd5zkEuXLfw" navigableOwnedEnd="_wgpHAD5AEeSFd5zkEuXLfw _wgq8MT5AEeSFd5zkEuXLfw">
+    <ownedEnd xmi:id="_wgpHAD5AEeSFd5zkEuXLfw" name="words" type="_uBzDUDz-EeSXStFmSYbJ-Q" association="_wgof8D5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgqVID5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgq8MD5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_wgq8MT5AEeSFd5zkEuXLfw" name="longMemorys" type="_8A9F0Dz-EeSXStFmSYbJ-Q" association="_wgof8D5AEeSFd5zkEuXLfw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgsxYD5AEeSFd5zkEuXLfw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgtYcD5AEeSFd5zkEuXLfw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_czSWID5BEeSFd5zkEuXLfw" name="Memory" isAbstract="true"/>
 </uml:Model>
