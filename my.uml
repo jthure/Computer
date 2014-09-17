@@ -1,97 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_SPKUwDz8EeSXStFmSYbJ-Q" name="NewModel">
-  <packagedElement xmi:type="uml:Class" xmi:id="_lrYc4Dz8EeSXStFmSYbJ-Q" name="Computer"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_AKEiMDz9EeSXStFmSYbJ-Q" name="Operation">
-    <ownedOperation xmi:id="_ElF8ADz9EeSXStFmSYbJ-Q" name="exec"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_JnVt4Dz9EeSXStFmSYbJ-Q" clientDependency="_c9zzUDz9EeSXStFmSYbJ-Q" name="BinExpr" isAbstract="true">
-    <ownedAttribute xmi:id="_XT1doDz-EeSXStFmSYbJ-Q" name="op1" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
-    <ownedAttribute xmi:id="_c5xLYDz-EeSXStFmSYbJ-Q" name="op2" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
-    <interfaceRealization xmi:id="_c9zzUDz9EeSXStFmSYbJ-Q" client="_JnVt4Dz9EeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_XA1ekDz9EeSXStFmSYbJ-Q" name="Mul">
-    <generalization xmi:id="_di4PQDz9EeSXStFmSYbJ-Q" general="_JnVt4Dz9EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_XT0sADz9EeSXStFmSYbJ-Q" name="Add">
-    <generalization xmi:id="_d8BvEDz9EeSXStFmSYbJ-Q" general="_JnVt4Dz9EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_hR_lUDz9EeSXStFmSYbJ-Q" clientDependency="_jC8JEDz-EeSXStFmSYbJ-Q" name="Jump">
-    <ownedAttribute xmi:id="_g5MOUDz-EeSXStFmSYbJ-Q" name="op1" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
-    <interfaceRealization xmi:id="_jC8JEDz-EeSXStFmSYbJ-Q" client="_hR_lUDz9EeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_MN-jgDz-EeSXStFmSYbJ-Q" name="Operand">
-    <ownedOperation xmi:id="_PT06IDz-EeSXStFmSYbJ-Q" name="getValue"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_leovcDz-EeSXStFmSYbJ-Q" clientDependency="_xIcEIDz-EeSXStFmSYbJ-Q" name="Address">
-    <interfaceRealization xmi:id="_xIcEIDz-EeSXStFmSYbJ-Q" client="_leovcDz-EeSXStFmSYbJ-Q" supplier="_MN-jgDz-EeSXStFmSYbJ-Q" contract="_MN-jgDz-EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_uBzDUDz-EeSXStFmSYbJ-Q" clientDependency="_xxlu0Dz-EeSXStFmSYbJ-Q" name="Word" isAbstract="true">
-    <interfaceRealization xmi:id="_xxlu0Dz-EeSXStFmSYbJ-Q" client="_uBzDUDz-EeSXStFmSYbJ-Q" supplier="_MN-jgDz-EeSXStFmSYbJ-Q" contract="_MN-jgDz-EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_yYjBIDz-EeSXStFmSYbJ-Q" name="LongWord">
-    <generalization xmi:id="_0Ik0UDz-EeSXStFmSYbJ-Q" general="_uBzDUDz-EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_8A9F0Dz-EeSXStFmSYbJ-Q" name="LongMemory">
-    <generalization xmi:id="_jFCoED5BEeSFd5zkEuXLfw" general="_czSWID5BEeSFd5zkEuXLfw"/>
-    <ownedAttribute xmi:id="_-TNcUDz-EeSXStFmSYbJ-Q" name="memory" type="_yYjBIDz-EeSXStFmSYbJ-Q">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_HiM7cDz_EeSXStFmSYbJ-Q">
-        <value xsi:nil="true"/>
-      </defaultValue>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Rmm_oDz_EeSXStFmSYbJ-Q" name="Program">
-    <generalization xmi:id="_bBflsDz_EeSXStFmSYbJ-Q" general="_WrufUDz_EeSXStFmSYbJ-Q"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WrufUDz_EeSXStFmSYbJ-Q" name="ArrayList&lt;Operation>"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_eAnpQDz_EeSXStFmSYbJ-Q" name="programsToOperations" memberEnd="_eAoQUDz_EeSXStFmSYbJ-Q _eAshwDz_EeSXStFmSYbJ-Q" navigableOwnedEnd="_eAoQUDz_EeSXStFmSYbJ-Q _eAshwDz_EeSXStFmSYbJ-Q">
-    <ownedEnd xmi:id="_eAoQUDz_EeSXStFmSYbJ-Q" name="programs" type="_Rmm_oDz_EeSXStFmSYbJ-Q" association="_eAnpQDz_EeSXStFmSYbJ-Q">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eAqskDz_EeSXStFmSYbJ-Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAr6sDz_EeSXStFmSYbJ-Q" value="*"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_5JLyADz_EeSXStFmSYbJ-Q" value="1"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_eAshwDz_EeSXStFmSYbJ-Q" name="operations" type="_AKEiMDz9EeSXStFmSYbJ-Q" association="_eAnpQDz_EeSXStFmSYbJ-Q">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eAtI0Dz_EeSXStFmSYbJ-Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eAtv4Dz_EeSXStFmSYbJ-Q" value="*"/>
-    </ownedEnd>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yHje0D5eEeSuE9CuqOnxig" name="computersToProgCounters"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yUfKwD5iEeSuE9CuqOnxig" name="operand">
+    <packagedElement xmi:type="uml:Class" xmi:id="_uBzDUDz-EeSXStFmSYbJ-Q" clientDependency="_xxlu0Dz-EeSXStFmSYbJ-Q" name="Word" isAbstract="true">
+      <interfaceRealization xmi:id="_xxlu0Dz-EeSXStFmSYbJ-Q" client="_uBzDUDz-EeSXStFmSYbJ-Q" supplier="_MN-jgDz-EeSXStFmSYbJ-Q" contract="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yYjBIDz-EeSXStFmSYbJ-Q" name="LongWord">
+      <generalization xmi:id="_0Ik0UDz-EeSXStFmSYbJ-Q" general="_uBzDUDz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_uaJ4oD5hEeSuE9CuqOnxig" name="value" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_MN-jgDz-EeSXStFmSYbJ-Q" name="Operand">
+      <ownedOperation xmi:id="_PT06IDz-EeSXStFmSYbJ-Q" name="getValue"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_leovcDz-EeSXStFmSYbJ-Q" clientDependency="_xIcEIDz-EeSXStFmSYbJ-Q" name="Address">
+      <ownedAttribute xmi:id="_kkOVUD5hEeSuE9CuqOnxig" name="address" visibility="private"/>
+      <interfaceRealization xmi:id="_xIcEIDz-EeSXStFmSYbJ-Q" client="_leovcDz-EeSXStFmSYbJ-Q" supplier="_MN-jgDz-EeSXStFmSYbJ-Q" contract="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AIFd0D0AEeSXStFmSYbJ-Q" clientDependency="_ChtAkD0AEeSXStFmSYbJ-Q" name="JumpEq">
-    <interfaceRealization xmi:id="_ChtAkD0AEeSXStFmSYbJ-Q" client="_AIFd0D0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UTVO0D5jEeSuE9CuqOnxig" name="operation">
+    <packagedElement xmi:type="uml:Class" xmi:id="_AIFd0D0AEeSXStFmSYbJ-Q" clientDependency="_ChtAkD0AEeSXStFmSYbJ-Q" name="JumpEq">
+      <ownedAttribute xmi:id="_TBvIQD5cEeSuE9CuqOnxig" name="jumpTo" visibility="private"/>
+      <ownedAttribute xmi:id="__VxT8D5bEeSuE9CuqOnxig" name="op1" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_FwXY0D5cEeSuE9CuqOnxig" name="op2" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <interfaceRealization xmi:id="_ChtAkD0AEeSXStFmSYbJ-Q" client="_AIFd0D0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hR_lUDz9EeSXStFmSYbJ-Q" clientDependency="_jC8JEDz-EeSXStFmSYbJ-Q" name="Jump">
+      <ownedAttribute xmi:id="_g5MOUDz-EeSXStFmSYbJ-Q" name="jumpTo" visibility="private"/>
+      <interfaceRealization xmi:id="_jC8JEDz-EeSXStFmSYbJ-Q" client="_hR_lUDz9EeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BPiucD5bEeSuE9CuqOnxig" clientDependency="_rqxI8D5bEeSuE9CuqOnxig" name="Copy">
+      <ownedAttribute xmi:id="_sIYckD5cEeSuE9CuqOnxig" name="op1" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <interfaceRealization xmi:id="_rqxI8D5bEeSuE9CuqOnxig" client="_BPiucD5bEeSuE9CuqOnxig" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XT0sADz9EeSXStFmSYbJ-Q" name="Add">
+      <generalization xmi:id="_d8BvEDz9EeSXStFmSYbJ-Q" general="_JnVt4Dz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XA1ekDz9EeSXStFmSYbJ-Q" name="Mul">
+      <generalization xmi:id="_di4PQDz9EeSXStFmSYbJ-Q" general="_JnVt4Dz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JnVt4Dz9EeSXStFmSYbJ-Q" clientDependency="_c9zzUDz9EeSXStFmSYbJ-Q" name="BinExpr" isAbstract="true">
+      <ownedAttribute xmi:id="_XT1doDz-EeSXStFmSYbJ-Q" name="op1" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_c5xLYDz-EeSXStFmSYbJ-Q" name="op2" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_W9xAUD5ZEeSFtLxiTay7mA" name="address" visibility="private" type="_leovcDz-EeSXStFmSYbJ-Q"/>
+      <interfaceRealization xmi:id="_c9zzUDz9EeSXStFmSYbJ-Q" client="_JnVt4Dz9EeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GFZw0D0AEeSXStFmSYbJ-Q" clientDependency="_IcAb0D0AEeSXStFmSYbJ-Q" name="Print">
+      <ownedAttribute xmi:id="_av4GYD5hEeSuE9CuqOnxig" name="op" visibility="private" type="_MN-jgDz-EeSXStFmSYbJ-Q"/>
+      <interfaceRealization xmi:id="_IcAb0D0AEeSXStFmSYbJ-Q" client="_GFZw0D0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DljDMD0AEeSXStFmSYbJ-Q" clientDependency="_I38J4D0AEeSXStFmSYbJ-Q" name="Halt">
+      <interfaceRealization xmi:id="_I38J4D0AEeSXStFmSYbJ-Q" client="_DljDMD0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_AKEiMDz9EeSXStFmSYbJ-Q" name="Operation">
+      <ownedOperation xmi:id="_ElF8ADz9EeSXStFmSYbJ-Q" name="exec">
+        <ownedParameter xmi:id="_CX0TMD5dEeSuE9CuqOnxig" name="memory" type="_3ndWADz-EeSXStFmSYbJ-Q"/>
+        <ownedParameter xmi:id="_PI9DYD5dEeSuE9CuqOnxig" name="progCounter" type="_H1xwsD5dEeSuE9CuqOnxig"/>
+      </ownedOperation>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_DljDMD0AEeSXStFmSYbJ-Q" clientDependency="_I38J4D0AEeSXStFmSYbJ-Q" name="Halt">
-    <interfaceRealization xmi:id="_I38J4D0AEeSXStFmSYbJ-Q" client="_DljDMD0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nZhckD5jEeSuE9CuqOnxig" name="computer">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Rmm_oDz_EeSXStFmSYbJ-Q" name="Program">
+      <generalization xmi:id="_bBflsDz_EeSXStFmSYbJ-Q" general="_WrufUDz_EeSXStFmSYbJ-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lrYc4Dz8EeSXStFmSYbJ-Q" name="Computer">
+      <ownedAttribute xmi:id="_j2aw8D5dEeSuE9CuqOnxig" name="memory" visibility="private" type="_3ndWADz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_nEhrsD5dEeSuE9CuqOnxig" name="program" visibility="private" type="_Rmm_oDz_EeSXStFmSYbJ-Q" aggregation="shared"/>
+      <ownedAttribute xmi:id="_cf98QD5nEeSuE9CuqOnxig" name="progCounter" type="_H1xwsD5dEeSuE9CuqOnxig"/>
+      <ownedOperation xmi:id="_Th9rAD5dEeSuE9CuqOnxig" name="load">
+        <ownedParameter xmi:id="_bzqbcD5dEeSuE9CuqOnxig" name="program" type="_Rmm_oDz_EeSXStFmSYbJ-Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_gf2dwD5dEeSuE9CuqOnxig" name="run"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_H1xwsD5dEeSuE9CuqOnxig" name="ProgCounter">
+      <ownedAttribute xmi:id="_07ciwD5eEeSuE9CuqOnxig" name="next" visibility="private"/>
+      <ownedOperation xmi:id="_Y1JmcD5eEeSuE9CuqOnxig" name="setTo">
+        <ownedParameter xmi:id="_gRajsD5eEeSuE9CuqOnxig" name="nbr"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_b2aYAD5eEeSuE9CuqOnxig" name="increase"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3ndWADz-EeSXStFmSYbJ-Q" name="Memory" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8A9F0Dz-EeSXStFmSYbJ-Q" name="LongMemory">
+      <generalization xmi:id="_8xY9kD5ZEeSFtLxiTay7mA" general="_3ndWADz-EeSXStFmSYbJ-Q"/>
+      <ownedAttribute xmi:id="_-TNcUDz-EeSXStFmSYbJ-Q" name="memory" type="_yYjBIDz-EeSXStFmSYbJ-Q">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HiM7cDz_EeSXStFmSYbJ-Q">
+          <value xsi:nil="true"/>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_GFZw0D0AEeSXStFmSYbJ-Q" clientDependency="_IcAb0D0AEeSXStFmSYbJ-Q" name="Print">
-    <interfaceRealization xmi:id="_IcAb0D0AEeSXStFmSYbJ-Q" client="_GFZw0D0AEeSXStFmSYbJ-Q" supplier="_AKEiMDz9EeSXStFmSYbJ-Q" contract="_AKEiMDz9EeSXStFmSYbJ-Q"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_dp4cYD5AEeSFd5zkEuXLfw" name="computersToMemorys" memberEnd="_dp5DcD5AEeSFd5zkEuXLfw _dp64oD5AEeSFd5zkEuXLfw" navigableOwnedEnd="_dp5DcD5AEeSFd5zkEuXLfw _dp64oD5AEeSFd5zkEuXLfw">
-    <ownedEnd xmi:id="_dp5DcD5AEeSFd5zkEuXLfw" name="computers" type="_lrYc4Dz8EeSXStFmSYbJ-Q" association="_dp4cYD5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dp6RkD5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dp6RkT5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_dp64oD5AEeSFd5zkEuXLfw" name="memorys" type="_czSWID5BEeSFd5zkEuXLfw" association="_dp4cYD5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dp8GwD5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dp8GwT5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ee_fcD5AEeSFd5zkEuXLfw" name="computersToPrograms" memberEnd="_efAGgD5AEeSFd5zkEuXLfw _efEX8D5AEeSFd5zkEuXLfw" navigableOwnedEnd="_efAGgD5AEeSFd5zkEuXLfw _efEX8D5AEeSFd5zkEuXLfw">
-    <ownedEnd xmi:id="_efAGgD5AEeSFd5zkEuXLfw" name="computers" type="_lrYc4Dz8EeSXStFmSYbJ-Q" association="_ee_fcD5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efDJ0D5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efDw4D5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_efEX8D5AEeSFd5zkEuXLfw" name="programs" type="_Rmm_oDz_EeSXStFmSYbJ-Q" association="_ee_fcD5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efHbQD5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efICUD5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_wgof8D5AEeSFd5zkEuXLfw" name="wordsToLongMemorys" memberEnd="_wgpHAD5AEeSFd5zkEuXLfw _wgq8MT5AEeSFd5zkEuXLfw" navigableOwnedEnd="_wgpHAD5AEeSFd5zkEuXLfw _wgq8MT5AEeSFd5zkEuXLfw">
-    <ownedEnd xmi:id="_wgpHAD5AEeSFd5zkEuXLfw" name="words" type="_uBzDUDz-EeSXStFmSYbJ-Q" association="_wgof8D5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgqVID5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgq8MD5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-    <ownedEnd xmi:id="_wgq8MT5AEeSFd5zkEuXLfw" name="longMemorys" type="_8A9F0Dz-EeSXStFmSYbJ-Q" association="_wgof8D5AEeSFd5zkEuXLfw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgsxYD5AEeSFd5zkEuXLfw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgtYcD5AEeSFd5zkEuXLfw" value="*"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_czSWID5BEeSFd5zkEuXLfw" name="Memory" isAbstract="true"/>
 </uml:Model>
