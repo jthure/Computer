@@ -5,6 +5,7 @@
 package operation;
 
 import operand.Operand;
+import operand.Address;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -17,6 +18,11 @@ public class Copy implements Operation {
      * Description of the property op1.
      */
     private Operand op1 = null;
+    
+    /**
+     * Description of the property adress.
+     */
+    public Address adress = null;
     
     // Start of user code (user defined attributes)
     
@@ -59,6 +65,22 @@ public class Copy implements Operation {
      */
     public void setOp1(Operand newOp1) {
         this.op1 = newOp1;
+    }
+    
+    /**
+     * Returns adress.
+     * @return adress 
+     */
+    public Address getAdress() {
+    	return this.adress;
+    }
+    
+    /**
+     * Sets a value to attribute adress. 
+     * @param newAdress 
+     */
+    public void setAdress(Address newAdress) {
+        this.adress = newAdress;
     }
     
     

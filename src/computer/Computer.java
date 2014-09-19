@@ -46,16 +46,16 @@ public class Computer {
      * @param program 
      */
     public void load(Program program) {
-    	this.program = program;
+    	this.program=program;
     }
      
     /**
      * Description of the method run.
      */
     public void run() {
-
+    	// Start of user code for method run
+    	// End of user code
     }
-
     
     
 }

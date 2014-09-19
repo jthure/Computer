@@ -4,30 +4,13 @@
  */
 package computer;
 
-// Start of user code (user defined imports)
+import operand.Address;
+import operand.Word;
 
-// End of user code
+public interface Memory {
 
-/**
- * Description of Memory.
- */
-public abstract class Memory {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
-    public Memory() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
-    }
-    
-    // Start of user code (user defined methods)
-    
-    // End of user code
+    public Word getWord(int address);
+
     
     
 }

@@ -4,6 +4,9 @@
  */
 package operation;
 
+import computer.Memory;
+
+import operand.Word;
 import operation.BinExpr;
 // Start of user code (user defined imports)
 
@@ -13,22 +16,19 @@ import operation.BinExpr;
  * Description of Add.
  */
 public class Add extends BinExpr {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
+
     public Add() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+
     }
     
-    // Start of user code (user defined methods)
-    
-    // End of user code
+
+	@Override
+	public void typeOp(Memory memory) {
+		address.getValue(memory).add(op1.getValue(memory), op2.getValue(memory));
+		
+//		dest.add(op1.getValue(memory),op2);
+		
+	}
     
     
 }

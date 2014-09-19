@@ -4,7 +4,9 @@
  */
 package computer;
 
+import operand.Address;
 import operand.LongWord;
+import operand.Word;
 import computer.Memory;
 // Start of user code (user defined imports)
 
@@ -13,44 +15,21 @@ import computer.Memory;
 /**
  * Description of LongMemory.
  */
-public class LongMemory extends Memory {
-    /**
-     * Description of the property memory.
-     */
-    public LongWord memory = null;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
-    public LongMemory() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+public class LongMemory implements Memory {
+	
+    LongWord[] memory;
+
+    public LongMemory(int size) {
+    	for(int i =0; i<size;i++){
+			memory[i]= new LongWord(0);
+		}
     }
     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns memory.
-     * @return memory 
-     */
-    public LongWord getMemory() {
-    	return this.memory;
-    }
-    
-    /**
-     * Sets a value to attribute memory. 
-     * @param newMemory 
-     */
-    public void setMemory(LongWord newMemory) {
-        this.memory = newMemory;
-    }
+    @Override
+	public Word getWord(int address) {
+
+		return memory[address];
+	}
     
     
 }

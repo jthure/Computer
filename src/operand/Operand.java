@@ -4,6 +4,8 @@
  */
 package operand;
 
+import computer.Memory;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -19,7 +21,7 @@ public interface Operand {
 	/**
 	 * Description of the method getValue.
 	 */
-	public Word getValue();
+	public Word getValue(Memory memory);
 	
 	// Start of user code (user defined methods)
 	

@@ -4,59 +4,27 @@
  */
 package operand;
 
-// Start of user code (user defined imports)
+import computer.Memory;
 
-// End of user code
 
-/**
- * Description of Address.
- */
 public class Address implements Operand {
-    /**
-     * Description of the property address.
-     */
-    private Object address = null;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
-    public Address() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+
+    private int address;
+
+    public Address(int address) {
+    	this.address = address;
     }
     
-    /**
-     * Description of the method getValue.
-     */
-    public void getValue() {
-    	// Start of user code for method getValue
-    	// End of user code
+    @Override
+    public Word getValue(Memory memory) {
+    	return memory.getWord(address);
     }
      
-    // Start of user code (user defined methods)
+
+//    public int getAddress() {
+//    	return this.address;
+//    }
     
-    // End of user code
-    
-    /**
-     * Returns address.
-     * @return address 
-     */
-    public Object getAddress() {
-    	return this.address;
-    }
-    
-    /**
-     * Sets a value to attribute address. 
-     * @param newAddress 
-     */
-    public void setAddress(Object newAddress) {
-        this.address = newAddress;
-    }
     
     
 }

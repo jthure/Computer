@@ -4,8 +4,11 @@
  */
 package operation;
 
+import computer.Memory;
+import computer.ProgCounter;
 import operand.Operand;
 import operand.Address;
+import operand.Word;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -14,20 +17,10 @@ import operand.Address;
  * Description of BinExpr.
  */
 public abstract class BinExpr implements Operation {
-    /**
-     * Description of the property op1.
-     */
-    private Operand op1 = null;
-    
-    /**
-     * Description of the property op2.
-     */
-    private Operand op2 = null;
-    
-    /**
-     * Description of the property address.
-     */
-    private Address address = null;
+
+    protected Operand op1;
+    protected Operand op2;
+    protected Address address;
     
     // Start of user code (user defined attributes)
     
@@ -36,72 +29,28 @@ public abstract class BinExpr implements Operation {
     /**
      * The constructor.
      */
-    public BinExpr() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    public BinExpr(Operand op1, Operand op2, Address address) {
+    	this.op1=op1;
+    	this.op2=op2;
+    	this.address=address;
     }
     
+    /**
+     * Description of the method typeOp.
+     */
+    public abstract void typeOp(Memory memory);
+     
     /**
      * Description of the method exec.
      * @param memory 
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
-    }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns op1.
-     * @return op1 
-     */
-    public Operand getOp1() {
-    	return this.op1;
-    }
-    
-    /**
-     * Sets a value to attribute op1. 
-     * @param newOp1 
-     */
-    public void setOp1(Operand newOp1) {
-        this.op1 = newOp1;
-    }
-    
-    /**
-     * Returns op2.
-     * @return op2 
-     */
-    public Operand getOp2() {
-    	return this.op2;
-    }
-    
-    /**
-     * Sets a value to attribute op2. 
-     * @param newOp2 
-     */
-    public void setOp2(Operand newOp2) {
-        this.op2 = newOp2;
-    }
-    
-    /**
-     * Returns address.
-     * @return address 
-     */
-    public Address getAddress() {
-    	return this.address;
-    }
-    
-    /**
-     * Sets a value to attribute address. 
-     * @param newAddress 
-     */
-    public void setAddress(Address newAddress) {
-        this.address = newAddress;
+//    	Word dest = address.getValue(memory);
+//    	Word word1 = op1.getValue(memory);
+//    	Word word2 = op2.getValue(memory);
+    	typeOp(memory);
+    	
     }
     
     

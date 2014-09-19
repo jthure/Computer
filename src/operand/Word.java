@@ -4,6 +4,7 @@
  */
 package operand;
 
+import operand.Operand;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -12,23 +13,19 @@ package operand;
  * Description of Word.
  */
 public abstract class Word implements Operand {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
+
     public Word() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+
     }
     
+    public abstract void add(Operand op1, Operand op2);
+    public abstract void mul(Operand op1, Operand op2);
+     
     /**
      * Description of the method getValue.
      */
-    public abstract Word getValue();
+    
+ 
      
     // Start of user code (user defined methods)
     

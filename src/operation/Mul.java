@@ -26,6 +26,14 @@ public class Mul extends BinExpr {
     	// End of user code
     }
     
+    /**
+     * Description of the method typeOp.
+     */
+    public void typeOp() {
+    	// Start of user code for method typeOp
+    	// End of user code
+    }
+     
     // Start of user code (user defined methods)
     
     // End of user code
