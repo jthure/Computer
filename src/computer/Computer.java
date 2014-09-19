@@ -37,10 +37,8 @@ public class Computer {
     /**
      * The constructor.
      */
-    public Computer() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    public Computer(Memory memory) {
+    	this.memory = memory;
     }
     
     /**
@@ -48,69 +46,16 @@ public class Computer {
      * @param program 
      */
     public void load(Program program) {
-    	// Start of user code for method load
-    	// End of user code
+    	this.program = program;
     }
      
     /**
      * Description of the method run.
      */
     public void run() {
-    	// Start of user code for method run
-    	// End of user code
+
     }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns memory.
-     * @return memory 
-     */
-    public Memory getMemory() {
-    	return this.memory;
-    }
-    
-    /**
-     * Sets a value to attribute memory. 
-     * @param newMemory 
-     */
-    public void setMemory(Memory newMemory) {
-        this.memory = newMemory;
-    }
-    
-    /**
-     * Returns program.
-     * @return program 
-     */
-    public Program getProgram() {
-    	return this.program;
-    }
-    
-    /**
-     * Sets a value to attribute program. 
-     * @param newProgram 
-     */
-    public void setProgram(Program newProgram) {
-        this.program = newProgram;
-    }
-    
-    /**
-     * Returns progCounter.
-     * @return progCounter 
-     */
-    public ProgCounter getProgCounter() {
-    	return this.progCounter;
-    }
-    
-    /**
-     * Sets a value to attribute progCounter. 
-     * @param newProgCounter 
-     */
-    public void setProgCounter(ProgCounter newProgCounter) {
-        this.progCounter = newProgCounter;
-    }
+
     
     
 }
