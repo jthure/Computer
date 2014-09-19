@@ -14,7 +14,7 @@ import operand.Word;
  * Description of LongWord.
  */
 public class LongWord extends Word {
-    long value;
+    private long value;
 
 
     public LongWord(long value) {
@@ -28,7 +28,7 @@ public class LongWord extends Word {
      * @param op2 
      */
     public void add(Word w1, Word w2) {
-    	value = ((LongWord) w1).getInternal()+((LongWord) w1).getInternal();
+    	value = ((LongWord) w1).value +((LongWord) w1).value;
     }
      
     /**
@@ -36,7 +36,7 @@ public class LongWord extends Word {
      * @param op1 
      * @param op2 
      */
-    public void mul(Operand op1, Operand op2) {
+    public void mul(Word w1, Word w2) {
     	// Start of user code for method mul
     	// End of user code
     }
@@ -45,9 +45,6 @@ public class LongWord extends Word {
 	public Word getValue(Memory memory) {
 		// TODO Auto-generated method stub
 		return this;
-	}
-	public long getInternal(){
-		return value;
 	}
      
     // Start of user code (user defined methods)

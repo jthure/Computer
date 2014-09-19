@@ -18,8 +18,8 @@ public abstract class Word implements Operand {
 
     }
     
-    public abstract void add(Operand op1, Operand op2);
-    public abstract void mul(Operand op1, Operand op2);
+    public abstract void add(Word w1, Word w2);
+    public abstract void mul(Word w1, Word w2);
      
     /**
      * Description of the method getValue.
