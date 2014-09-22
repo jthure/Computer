@@ -6,14 +6,8 @@ package operand;
 
 import computer.Memory;
 import operand.Word;
-// Start of user code (user defined imports)
 
-// End of user code
-
-/**
- * Description of LongWord.
- */
-public class LongWord extends Word {
+public class LongWord implements Word {
     private long value;
 
 
@@ -37,20 +31,14 @@ public class LongWord extends Word {
      * @param op2 
      */
     public void mul(Word w1, Word w2) {
-    	// Start of user code for method mul
-    	// End of user code
+    	value = ((LongWord) w1).value *((LongWord) w1).value;
     }
 
 	@Override
 	public Word getValue(Memory memory) {
-		// TODO Auto-generated method stub
 		return this;
 	}
      
-    // Start of user code (user defined methods)
-    
-    // End of user code
-
     
     
 }

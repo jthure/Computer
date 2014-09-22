@@ -4,7 +4,6 @@
  */
 package computer;
 
-import operand.Address;
 import operand.LongWord;
 import operand.Word;
 import computer.Memory;

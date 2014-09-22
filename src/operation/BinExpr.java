@@ -9,9 +9,6 @@ import computer.ProgCounter;
 import operand.Operand;
 import operand.Address;
 import operand.Word;
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of BinExpr.
@@ -21,10 +18,7 @@ public abstract class BinExpr implements Operation {
     protected Operand op1;
     protected Operand op2;
     protected Address address;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
+
     
     /**
      * The constructor.
@@ -35,9 +29,6 @@ public abstract class BinExpr implements Operation {
     	this.address=address;
     }
     
-    /**
-     * Description of the method typeOp.
-     */
     public abstract void typeOp(Memory memory);
      
     /**
@@ -46,10 +37,8 @@ public abstract class BinExpr implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-//    	Word dest = address.getValue(memory);
-//    	Word word1 = op1.getValue(memory);
-//    	Word word2 = op2.getValue(memory);
     	typeOp(memory);
+    	progCounter.increase();
     	
     }
     

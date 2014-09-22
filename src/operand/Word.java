@@ -5,31 +5,8 @@
 package operand;
 
 import operand.Operand;
-// Start of user code (user defined imports)
+public interface Word extends Operand {    
+    public void add(Word w1, Word w2);
+    public void mul(Word w1, Word w2);
 
-// End of user code
-
-/**
- * Description of Word.
- */
-public abstract class Word implements Operand {
-
-    public Word() {
-
-    }
-    
-    public abstract void add(Word w1, Word w2);
-    public abstract void mul(Word w1, Word w2);
-     
-    /**
-     * Description of the method getValue.
-     */
-    
- 
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    
 }

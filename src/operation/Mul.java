@@ -4,6 +4,10 @@
  */
 package operation;
 
+import computer.Memory;
+
+import operand.Address;
+import operand.Operand;
 import operation.BinExpr;
 // Start of user code (user defined imports)
 
@@ -20,18 +24,17 @@ public class Mul extends BinExpr {
     /**
      * The constructor.
      */
-    public Mul() {
+    public Mul(Operand op1, Operand op2, Address address) {
     	// Start of user code constructor
-    	super();
+    	super(op1,  op2,  address);
     	// End of user code
     }
     
     /**
      * Description of the method typeOp.
      */
-    public void typeOp() {
-    	// Start of user code for method typeOp
-    	// End of user code
+    public void typeOp(Memory memory) {
+    	address.getValue(memory).mul(op1.getValue(memory), op2.getValue(memory));
     }
      
     // Start of user code (user defined methods)

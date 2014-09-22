@@ -4,7 +4,6 @@
  */
 package computer;
 
-import operand.Address;
 import operand.Word;
 
 public interface Memory {

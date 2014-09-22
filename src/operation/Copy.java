@@ -4,9 +4,12 @@
  */
 package operation;
 
-import operand.Operand;
 import operand.Address;
 // Start of user code (user defined imports)
+import operand.Operand;
+
+import computer.Memory;
+import computer.ProgCounter;
 
 // End of user code
 
@@ -14,27 +17,16 @@ import operand.Address;
  * Description of Copy.
  */
 public class Copy implements Operation {
-    /**
-     * Description of the property op1.
-     */
+
     private Operand op1 = null;
-    
-    /**
-     * Description of the property adress.
-     */
-    public Address adress = null;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
+    public Address address = null;
     
     /**
      * The constructor.
      */
     public Copy() {
-    	// Start of user code constructor
     	super();
-    	// End of user code
+
     }
     
     /**
@@ -43,44 +35,7 @@ public class Copy implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
-    }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns op1.
-     * @return op1 
-     */
-    public Operand getOp1() {
-    	return this.op1;
-    }
-    
-    /**
-     * Sets a value to attribute op1. 
-     * @param newOp1 
-     */
-    public void setOp1(Operand newOp1) {
-        this.op1 = newOp1;
-    }
-    
-    /**
-     * Returns adress.
-     * @return adress 
-     */
-    public Address getAdress() {
-    	return this.adress;
-    }
-    
-    /**
-     * Sets a value to attribute adress. 
-     * @param newAdress 
-     */
-    public void setAdress(Address newAdress) {
-        this.adress = newAdress;
+ 
     }
     
     

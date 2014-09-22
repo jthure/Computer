@@ -4,6 +4,10 @@
  */
 package computer;
 
+import java.util.ArrayList;
+
+import operation.Operation;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -11,6 +15,7 @@ package computer;
 /**
  * Description of Program.
  */
+@SuppressWarnings("serial")
 public class Program extends ArrayList<Operation> {
     // Start of user code (user defined attributes)
     

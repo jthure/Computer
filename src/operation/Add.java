@@ -5,7 +5,8 @@
 package operation;
 
 import computer.Memory;
-
+import operand.Address;
+import operand.Operand;
 import operand.Word;
 import operation.BinExpr;
 // Start of user code (user defined imports)
@@ -17,8 +18,8 @@ import operation.BinExpr;
  */
 public class Add extends BinExpr {
 
-    public Add() {
-
+    public Add(Operand op1, Operand op2, Address address) {
+    	super(op1,  op2,  address);
     }
     
 
