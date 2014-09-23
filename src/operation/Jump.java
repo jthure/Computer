@@ -4,6 +4,9 @@
  */
 package operation;
 
+import computer.Memory;
+import computer.ProgCounter;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -15,19 +18,10 @@ public class Jump implements Operation {
     /**
      * Description of the property jumpTo.
      */
-    private Object jumpTo = null;
+    private int jumpTo;
     
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
-    public Jump() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    public Jump(int jumpTo) {
+    	this.jumpTo=jumpTo;
     }
     
     /**
@@ -36,28 +30,7 @@ public class Jump implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
-    }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns jumpTo.
-     * @return jumpTo 
-     */
-    public Object getJumpTo() {
-    	return this.jumpTo;
-    }
-    
-    /**
-     * Sets a value to attribute jumpTo. 
-     * @param newJumpTo 
-     */
-    public void setJumpTo(Object newJumpTo) {
-        this.jumpTo = newJumpTo;
+    	progCounter.setTo(jumpTo);
     }
     
     

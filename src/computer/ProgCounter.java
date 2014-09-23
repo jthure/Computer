@@ -15,57 +15,30 @@ public class ProgCounter {
     /**
      * Description of the property next.
      */
-    private Object next = null;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
+    private int next;
     
     /**
      * The constructor.
      */
     public ProgCounter() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    	next= 0;
     }
     
     /**
      * Description of the method setTo.
      * @param nbr 
      */
-    public void setTo(Object nbr) {
-    	// Start of user code for method setTo
-    	// End of user code
+    public void setTo(int nbr) {
+    	next = nbr;
     }
      
     /**
      * Description of the method increase.
      */
     public void increase() {
-    	// Start of user code for method increase
-    	// End of user code
+    	next++;
     }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns next.
-     * @return next 
-     */
-    public Object getNext() {
-    	return this.next;
+    public int getNext(){
+    	return next;
     }
-    
-    /**
-     * Sets a value to attribute next. 
-     * @param newNext 
-     */
-    public void setNext(Object newNext) {
-        this.next = newNext;
-    }
-    
-    
 }

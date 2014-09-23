@@ -17,17 +17,8 @@ import operation.BinExpr;
  * Description of Mul.
  */
 public class Mul extends BinExpr {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
     public Mul(Operand op1, Operand op2, Address address) {
-    	// Start of user code constructor
     	super(op1,  op2,  address);
-    	// End of user code
     }
     
     /**

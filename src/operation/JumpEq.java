@@ -7,38 +7,27 @@ package operation;
 import operand.Operand;
 // Start of user code (user defined imports)
 
+import computer.Memory;
+import computer.ProgCounter;
+
 // End of user code
 
 /**
  * Description of JumpEq.
  */
 public class JumpEq implements Operation {
-    /**
-     * Description of the property jumpTo.
-     */
-    private Object jumpTo = null;
-    
-    /**
-     * Description of the property op1.
-     */
-    private Operand op1 = null;
-    
-    /**
-     * Description of the property op2.
-     */
-    private Operand op2 = null;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
+
+    private int jumpTo;
+    private Operand op1;
+    private Operand op2;
     
     /**
      * The constructor.
      */
-    public JumpEq() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    public JumpEq(int jumpTo, Operand op1, Operand op2) {
+    	this.jumpTo=jumpTo;
+    	this.op1=op1;
+    	this.op2=op2;
     }
     
     /**
@@ -47,60 +36,11 @@ public class JumpEq implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
-    }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns jumpTo.
-     * @return jumpTo 
-     */
-    public Object getJumpTo() {
-    	return this.jumpTo;
-    }
-    
-    /**
-     * Sets a value to attribute jumpTo. 
-     * @param newJumpTo 
-     */
-    public void setJumpTo(Object newJumpTo) {
-        this.jumpTo = newJumpTo;
-    }
-    
-    /**
-     * Returns op1.
-     * @return op1 
-     */
-    public Operand getOp1() {
-    	return this.op1;
-    }
-    
-    /**
-     * Sets a value to attribute op1. 
-     * @param newOp1 
-     */
-    public void setOp1(Operand newOp1) {
-        this.op1 = newOp1;
-    }
-    
-    /**
-     * Returns op2.
-     * @return op2 
-     */
-    public Operand getOp2() {
-    	return this.op2;
-    }
-    
-    /**
-     * Sets a value to attribute op2. 
-     * @param newOp2 
-     */
-    public void setOp2(Operand newOp2) {
-        this.op2 = newOp2;
+    	if(op1.getValue(memory).equals(op2.getValue(memory))){
+    		progCounter.setTo(jumpTo);
+    	}else {
+    		progCounter.increase();
+    	}
     }
     
     

@@ -7,7 +7,7 @@ package operation;
 import operand.Address;
 // Start of user code (user defined imports)
 import operand.Operand;
-
+import operand.Word;
 import computer.Memory;
 import computer.ProgCounter;
 
@@ -24,9 +24,9 @@ public class Copy implements Operation {
     /**
      * The constructor.
      */
-    public Copy() {
-    	super();
-
+    public Copy(Operand op1, Address address) {
+    	this.op1 = op1;
+    	this.address = address;
     }
     
     /**
@@ -35,7 +35,8 @@ public class Copy implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
- 
+    	address.getValue(memory).setValue(op1.getValue(memory));
+    	progCounter.increase();
     }
     
     

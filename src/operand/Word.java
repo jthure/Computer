@@ -8,5 +8,8 @@ import operand.Operand;
 public interface Word extends Operand {    
     public void add(Word w1, Word w2);
     public void mul(Word w1, Word w2);
+    public void setValue(Word w);
+    public String toString();
+    public boolean equals(Object o);
 
 }

@@ -19,6 +19,7 @@ public class LongMemory implements Memory {
     LongWord[] memory;
 
     public LongMemory(int size) {
+    	memory = new LongWord[size];
     	for(int i =0; i<size;i++){
 			memory[i]= new LongWord(0);
 		}

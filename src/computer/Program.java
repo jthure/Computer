@@ -16,7 +16,7 @@ import operation.Operation;
  * Description of Program.
  */
 @SuppressWarnings("serial")
-public class Program extends ArrayList<Operation> {
+public abstract class Program extends ArrayList<Operation> {
     // Start of user code (user defined attributes)
     
     // End of user code

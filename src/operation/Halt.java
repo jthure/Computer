@@ -4,6 +4,9 @@
  */
 package operation;
 
+import computer.Memory;
+import computer.ProgCounter;
+
 // Start of user code (user defined imports)
 
 // End of user code
@@ -12,17 +15,8 @@ package operation;
  * Description of Halt.
  */
 public class Halt implements Operation {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
+
     public Halt() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
     }
     
     /**
@@ -31,13 +25,8 @@ public class Halt implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
+    	progCounter.setTo(-1);
     }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
     
     
 }

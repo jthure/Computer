@@ -20,10 +20,6 @@ public class Address implements Operand {
     	return memory.getWord(address);
     }
      
-
-//    public int getAddress() {
-//    	return this.address;
-//    }
     
     
     

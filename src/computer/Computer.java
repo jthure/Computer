@@ -18,17 +18,10 @@ public class Computer {
     /**
      * Description of the property memory.
      */
-    private Memory memory = null;
-    
-    /**
-     * Description of the property program.
-     */
-    private Program program = null;
-    
-    /**
-     * Description of the property progCounter.
-     */
-    public ProgCounter progCounter = null;
+    private Memory memory;
+
+    private Program program;
+    private ProgCounter progCounter;
     
     // Start of user code (user defined attributes)
     
@@ -39,6 +32,7 @@ public class Computer {
      */
     public Computer(Memory memory) {
     	this.memory = memory;
+    	progCounter=new ProgCounter();
     }
     
     /**
@@ -53,8 +47,9 @@ public class Computer {
      * Description of the method run.
      */
     public void run() {
-    	// Start of user code for method run
-    	// End of user code
+    	while(progCounter.getNext() >= 0){
+    		program.get(progCounter.getNext()).exec(memory, progCounter);
+    	}
     }
     
     

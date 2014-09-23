@@ -4,7 +4,10 @@
  */
 package operation;
 
-import operand.Operand;
+import operand.Address;
+
+import computer.Memory;
+import computer.ProgCounter;
 // Start of user code (user defined imports)
 
 // End of user code
@@ -16,7 +19,7 @@ public class Print implements Operation {
     /**
      * Description of the property op.
      */
-    private Operand op = null;
+    private Address address;
     
     // Start of user code (user defined attributes)
     
@@ -25,10 +28,8 @@ public class Print implements Operation {
     /**
      * The constructor.
      */
-    public Print() {
-    	// Start of user code constructor
-    	super();
-    	// End of user code
+    public Print(Address address) {
+    	this.address=address;
     }
     
     /**
@@ -37,28 +38,8 @@ public class Print implements Operation {
      * @param progCounter 
      */
     public void exec(Memory memory, ProgCounter progCounter) {
-    	// Start of user code for method exec
-    	// End of user code
-    }
-     
-    // Start of user code (user defined methods)
-    
-    // End of user code
-    
-    /**
-     * Returns op.
-     * @return op 
-     */
-    public Operand getOp() {
-    	return this.op;
-    }
-    
-    /**
-     * Sets a value to attribute op. 
-     * @param newOp 
-     */
-    public void setOp(Operand newOp) {
-        this.op = newOp;
+    	System.out.println(address.getValue(memory).toString());
+    	progCounter.increase();
     }
     
     
