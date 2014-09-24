@@ -7,9 +7,6 @@ package computer;
 import computer.Memory;
 import computer.Program;
 import computer.ProgCounter;
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Computer.
@@ -23,13 +20,6 @@ public class Computer {
     private Program program;
     private ProgCounter progCounter;
     
-    // Start of user code (user defined attributes)
-    
-    // End of user code
-    
-    /**
-     * The constructor.
-     */
     public Computer(Memory memory) {
     	this.memory = memory;
     	progCounter=new ProgCounter();

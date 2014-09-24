@@ -12,7 +12,6 @@ public class LongWord implements Word {
 
 
     public LongWord(long value) {
-//    	super();
     	this.value = value;
     }
     

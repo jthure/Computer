@@ -9,9 +9,6 @@ import operand.Address;
 import operand.Operand;
 import operand.Word;
 import operation.BinExpr;
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Add.
@@ -26,8 +23,6 @@ public class Add extends BinExpr {
 	@Override
 	public void typeOp(Memory memory) {
 		address.getValue(memory).add(op1.getValue(memory), op2.getValue(memory));
-		
-//		dest.add(op1.getValue(memory),op2);
 		
 	}
 	

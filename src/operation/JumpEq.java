@@ -10,7 +10,6 @@ import operand.Operand;
 import computer.Memory;
 import computer.ProgCounter;
 
-// End of user code
 
 /**
  * Description of JumpEq.

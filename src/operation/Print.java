@@ -8,9 +8,6 @@ import operand.Address;
 
 import computer.Memory;
 import computer.ProgCounter;
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Print.
@@ -20,10 +17,6 @@ public class Print implements Operation {
      * Description of the property op.
      */
     private Address address;
-    
-    // Start of user code (user defined attributes)
-    
-    // End of user code
     
     /**
      * The constructor.

@@ -7,10 +7,6 @@ package operation;
 import computer.Memory;
 import computer.ProgCounter;
 
-// Start of user code (user defined imports)
-
-// End of user code
-
 /**
  * Description of Jump.
  */

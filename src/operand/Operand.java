@@ -6,17 +6,11 @@ package operand;
 
 import computer.Memory;
 
-// Start of user code (user defined imports)
-
-// End of user code
-
 /**
  * Description of Operand.
  */
 public interface Operand {
-	// Start of user code (user defined attributes)
-	
-	// End of user code
+
 	
 	/**
 	 * Description of the method getValue.
@@ -24,8 +18,6 @@ public interface Operand {
 	public Word getValue(Memory memory);
 	
 	public String toString();
-	// Start of user code (user defined methods)
-	
-	// End of user code
+
 	
 }

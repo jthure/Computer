@@ -8,31 +8,20 @@ import java.util.ArrayList;
 
 import operation.Operation;
 
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Program.
  */
 @SuppressWarnings("serial")
 public abstract class Program extends ArrayList<Operation> {
-    // Start of user code (user defined attributes)
-    
-    // End of user code
+
     
     /**
      * The constructor.
      */
     public Program() {
-    	// Start of user code constructor
     	super();
-    	// End of user code
     }
-    
-    // Start of user code (user defined methods)
-    
-    // End of user code
     
     public String toString(){
     	StringBuilder sb = new StringBuilder();

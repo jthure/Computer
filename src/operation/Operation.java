@@ -6,17 +6,12 @@ package operation;
 
 import computer.Memory;
 import computer.ProgCounter;
-// Start of user code (user defined imports)
 
-// End of user code
 
 /**
  * Description of Operation.
  */
 public interface Operation {
-	// Start of user code (user defined attributes)
-	
-	// End of user code
 	
 	/**
 	 * Description of the method exec.
@@ -25,8 +20,5 @@ public interface Operation {
 	 */
 	public void exec(Memory memory, ProgCounter progCounter);
 	
-	// Start of user code (user defined methods)
-	
-	// End of user code
 	public String toString();
 }

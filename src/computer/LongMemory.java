@@ -7,9 +7,7 @@ package computer;
 import operand.LongWord;
 import operand.Word;
 import computer.Memory;
-// Start of user code (user defined imports)
 
-// End of user code
 
 /**
  * Description of LongMemory.

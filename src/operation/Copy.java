@@ -5,13 +5,10 @@
 package operation;
 
 import operand.Address;
-// Start of user code (user defined imports)
 import operand.Operand;
 import operand.Word;
 import computer.Memory;
 import computer.ProgCounter;
-
-// End of user code
 
 /**
  * Description of Copy.
