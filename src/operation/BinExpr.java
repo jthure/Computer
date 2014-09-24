@@ -42,5 +42,9 @@ public abstract class BinExpr implements Operation {
     	
     }
     
+    public String toString(){
+		return prefix() + op1.toString() + " " + op2.toString() + " " + address.toString();
+	}
     
+    public abstract String prefix();
 }

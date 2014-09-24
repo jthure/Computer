@@ -32,5 +32,8 @@ public class Mul extends BinExpr {
     
     // End of user code
     
+    public String prefix(){
+    	return "MUL ";
+    }
     
 }

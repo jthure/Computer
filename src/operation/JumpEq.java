@@ -43,5 +43,8 @@ public class JumpEq implements Operation {
     	}
     }
     
+    public String toString(){
+    	return "JEQ " + jumpTo + " " + op1.toString() + " " + op2.toString();
+    }
     
 }

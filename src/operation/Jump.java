@@ -33,5 +33,7 @@ public class Jump implements Operation {
     	progCounter.setTo(jumpTo);
     }
     
-    
+    public String toString(){
+    	return "JMP " + jumpTo;
+    }
 }

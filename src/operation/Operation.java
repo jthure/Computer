@@ -28,5 +28,5 @@ public interface Operation {
 	// Start of user code (user defined methods)
 	
 	// End of user code
-	
+	public String toString();
 }

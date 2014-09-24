@@ -28,5 +28,7 @@ public class Halt implements Operation {
     	progCounter.setTo(-1);
     }
     
-    
+    public String toString(){
+    	return "HLT";
+    }
 }

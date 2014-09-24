@@ -23,6 +23,7 @@ public interface Operand {
 	 */
 	public Word getValue(Memory memory);
 	
+	public String toString();
 	// Start of user code (user defined methods)
 	
 	// End of user code

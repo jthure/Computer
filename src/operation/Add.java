@@ -30,6 +30,10 @@ public class Add extends BinExpr {
 //		dest.add(op1.getValue(memory),op2);
 		
 	}
+	
+	public String prefix(){
+		return "ADD ";
+	}
     
     
 }

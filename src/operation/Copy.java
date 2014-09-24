@@ -39,5 +39,7 @@ public class Copy implements Operation {
     	progCounter.increase();
     }
     
-    
+    public String toString(){
+    	return "CPY " + op1 + " " + address;
+    }
 }

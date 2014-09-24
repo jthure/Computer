@@ -42,5 +42,7 @@ public class Print implements Operation {
     	progCounter.increase();
     }
     
-    
+    public String toString(){
+    	return "PRT " + address.toString();
+    }
 }

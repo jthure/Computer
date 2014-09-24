@@ -20,7 +20,9 @@ public class Address implements Operand {
     	return memory.getWord(address);
     }
      
-    
+    public String toString(){
+    	return "[" + address + "]";
+    }
     
     
 }

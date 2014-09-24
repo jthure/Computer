@@ -34,5 +34,16 @@ public abstract class Program extends ArrayList<Operation> {
     
     // End of user code
     
+    public String toString(){
+    	StringBuilder sb = new StringBuilder();
+    	int count = 0;
+    	for (Operation op : this){
+    		sb.append(count + " ");
+    		sb.append(op);
+    		sb.append(System.getProperty("line.separator"));
+    		count ++;
+    	}
+    	return sb.toString();
+    }
     
 }
