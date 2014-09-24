@@ -15,8 +15,8 @@ import computer.ProgCounter;
  */
 public class Copy implements Operation {
 
-    private Operand op1 = null;
-    public Address address = null;
+    private Operand op1;
+    private Address address;
     
     /**
      * The constructor.

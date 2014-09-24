@@ -14,7 +14,7 @@ import computer.Memory;
  */
 public class LongMemory implements Memory {
 	
-    LongWord[] memory;
+    private LongWord[] memory;
 
     public LongMemory(int size) {
     	memory = new LongWord[size];
