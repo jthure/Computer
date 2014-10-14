@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.6" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="computer.Computer" project="Computer" file="/Computer/src/computer/Computer.java" 
+    binary="false" label="" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="98" y="0"/>    
+    <execution id="2">      
+      <position height="429" width="80" x="5" y="92"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="operation.Add" project="Computer" file="/Computer/src/operation/Add.java" 
+    binary="false" label="" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="150" y="0"/>    
+    <execution id="4">      
+      <position height="391" width="46" x="89" y="111"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="301" width="0" x="0" y="149"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="operand.Address" project="Computer" file="/Computer/src/operand/Address.java" 
+    binary="false" label="n" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="77" width="0" x="0" y="177"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="73" width="72" x="139" y="314"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="computer.LongMemory" project="Computer" 
+    file="/Computer/src/computer/LongMemory.java" binary="false" label="memory" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="255" y="0"/>    
+    <execution id="20">      
+      <position height="19" width="98" x="289" y="216"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="19" width="98" x="215" y="349"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="operand.LongWord" project="Computer" file="/Computer/src/operand/LongWord.java" 
+    binary="false" label="word1/destination" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="480" y="0"/>    
+    <execution id="17">      
+      <position height="19" width="81" x="441" y="412"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="operand.LongWord" project="Computer" file="/Computer/src/operand/LongWord.java" 
+    binary="false" label="word2" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="359" y="0"/>    
+    <execution id="13">      
+      <position height="19" width="81" x="365" y="284"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="computer.ProgCounter" project="Computer" 
+    file="/Computer/src/computer/ProgCounter.java" binary="false" label="progCounter" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="19" width="7" x="532" y="464"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="exec(computer.Memory,computer.ProgCounter):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="typeOp(computer.Memory):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="increase():void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="getValue(computer.Memory):operand.Word">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getValue(computer.Memory):operand.Word">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="getValue(computer.Memory):operand.Word">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="add(operand.Word,operand.Word):void">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="19" operation="getWord(int):operand.Word">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="getWord(int):operand.Word">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>
+</sequence-diagram>
